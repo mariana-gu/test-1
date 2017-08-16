@@ -1,0 +1,178 @@
+Worker information
+hostname: vmhost-travis002.bur:b470fea8-92f7-4ec6-90a7-59928cd92b0a
+version: v2.2.0 https://github.com/travis-ci/worker/tree/959eae1840129d9f92bf1da6e628d8ac2b50d638
+instance: e4b98a0:travis:ruby
+startup: 2562047h47m16.854775807s
+Build system information
+Build language: ruby
+Build group: stable
+Build dist: precise
+Build id: 5811
+Job id: 5812
+Build image provisioning date and time
+Thu Feb  5 15:09:33 UTC 2015
+Operating System Details
+Distributor ID:	Ubuntu
+Description:	Ubuntu 12.04.5 LTS
+Release:	12.04
+Codename:	precise
+Linux Version
+3.13.0-29-generic
+Cookbooks Version
+a68419e https://github.com/travis-ci/travis-cookbooks/tree/a68419e
+GCC version
+gcc (Ubuntu/Linaro 4.6.3-1ubuntu5) 4.6.3
+Copyright (C) 2011 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+LLVM version
+clang version 3.4 (tags/RELEASE_34/final)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+Pre-installed Ruby versions
+ruby-1.9.3-p551
+Pre-installed Node.js versions
+v0.10.36
+Pre-installed Go versions
+1.4.1
+Redis version
+redis-server 2.8.19
+riak version
+2.0.2
+MongoDB version
+MongoDB 2.4.12
+CouchDB version
+couchdb 1.6.1
+Neo4j version
+1.9.4
+RabbitMQ Version
+3.4.3
+ElasticSearch version
+1.4.0
+Installed Sphinx versions
+2.0.10
+2.1.9
+2.2.6
+Default Sphinx version
+2.2.6
+Installed Firefox version
+firefox 31.0esr
+PhantomJS version
+1.9.8
+ant -version
+Apache Ant(TM) version 1.8.2 compiled on December 3 2011
+mvn -version
+Apache Maven 3.2.5 (12a6b3acb947671f09b81f49094c53f426d8cea1; 2014-12-14T17:29:23+00:00)
+Maven home: /usr/local/maven
+Java version: 1.7.0_76, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/java-7-oracle/jre
+Default locale: en_US, platform encoding: ANSI_X3.4-1968
+OS name: "linux", version: "3.13.0-29-generic", arch: "amd64", family: "unix"
+
+sed: cannot rename /etc/hosts: Device or resource busy
+
+Installing an SSH key from: default repository key
+Key fingerprint: ad:d4:5a:dc:e9:d6:5a:8e:08:7e:18:e4:d1:e5:09:b0
+
+$ git clone --depth=50 --branch=master git@git.edgecastcdn.net:bbrady/test_repo.git bbrady/test_repo
+Cloning into 'bbrady/test_repo'...
+Warning: Permanently added 'git.edgecastcdn.net,10.240.39.156' (ECDSA) to the list of known hosts.
+remote: Counting objects: 27, done.
+remote: Compressing objects: 100% (18/18), done.
+remote: Total 27 (delta 7), reused 27 (delta 7), pack-reused 0
+Receiving objects: 100% (27/27), done.
+Resolving deltas: 100% (7/7), done.
+Checking connectivity... done.
+
+$ cd bbrady/test_repo
+$ git checkout -qf 1408d8acf04bb55baf435a7da803cd191c9e2ead
+$ rvm use default
+Using /home/travis/.rvm/gems/ruby-1.9.3-p551
+
+$ ruby --version
+ruby 1.9.3p551 (2014-11-13 revision 48407) [x86_64-linux]
+$ rvm --version
+rvm 1.26.10 (latest-minor) by Wayne E. Seguin <wayneeseguin@gmail.com>, Michal Papis <mpapis@gmail.com> [https://rvm.io/]
+$ bundle --version
+Bundler version 1.7.6
+$ gem --version
+2.4.5
+$ true
+
+
+The command "true" exited with 0.
+$ gem install --no-rdoc --no-ri fpm
+Fetching: stud-0.0.23.gem (100%)
+Successfully installed stud-0.0.23
+Fetching: dotenv-2.2.1.gem (100%)
+Successfully installed dotenv-2.2.1
+Fetching: insist-1.0.0.gem (100%)
+Successfully installed insist-1.0.0
+Fetching: mustache-0.99.8.gem (100%)
+Successfully installed mustache-0.99.8
+Fetching: clamp-1.0.1.gem (100%)
+Successfully installed clamp-1.0.1
+Fetching: cabin-0.9.0.gem (100%)
+Successfully installed cabin-0.9.0
+Fetching: pleaserun-0.0.30.gem (100%)
+Successfully installed pleaserun-0.0.30
+Fetching: io-like-0.3.0.gem (100%)
+Successfully installed io-like-0.3.0
+Fetching: ffi-1.9.18.gem (100%)
+Building native extensions.  This could take a while...
+Successfully installed ffi-1.9.18
+Fetching: ruby-xz-0.2.3.gem (100%)
+Successfully installed ruby-xz-0.2.3
+Fetching: childprocess-0.7.1.gem (100%)
+Successfully installed childprocess-0.7.1
+Fetching: arr-pm-0.0.10.gem (100%)
+Successfully installed arr-pm-0.0.10
+Fetching: backports-3.8.0.gem (100%)
+Successfully installed backports-3.8.0
+Fetching: json-1.8.6.gem (100%)
+Building native extensions.  This could take a while...
+Successfully installed json-1.8.6
+Fetching: fpm-1.9.2.gem (100%)
+Successfully installed fpm-1.9.2
+15 gems installed
+
+$ gem which fpm
+/home/travis/.rvm/gems/ruby-1.9.3-p551/gems/fpm-1.9.2/lib/fpm.rb
+
+$ echo $PATH
+/home/travis/.rvm/gems/ruby-1.9.3-p551/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p551/bin:/home/travis/.rvm/bin:/home/travis/bin:/home/travis/.local/bin:/home/travis/.gimme/versions/go1.4.1.linux.amd64/bin:/usr/local/phantomjs/bin:/home/travis/.nvm/v0.10.36/bin:./node_modules/.bin:/usr/local/maven-3.2.5/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+
+$ which -a fpm
+/home/travis/.rvm/gems/ruby-1.9.3-p551/bin/fpm
+
+Fetching: dpl-1.8.40.gem (100%)
+Successfully installed dpl-1.8.40
+1 gem installed
+
+Installing deploy dependencies
+
+!!! Script support is experimental !!!
+
+
+Preparing deploy
+
+Deploying application
+/home/travis/.rvm/gems/ruby-1.9.3-p551/bin:/home/travis/.rvm/gems/ruby-1.9.3-p551@global/bin:/home/travis/.rvm/rubies/ruby-1.9.3-p551/bin:/home/travis/.rvm/bin:/home/travis/bin:/home/travis/.local/bin:/home/travis/.gimme/versions/go1.4.1.linux.amd64/bin:/usr/local/phantomjs/bin:/home/travis/.nvm/v0.10.36/bin:./node_modules/.bin:/usr/local/maven-3.2.5/bin:/usr/local/clang-3.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+total 52K
+drwxr-xr-x  2 travis root   4.0K Aug  7 23:05 .
+drwxr-xr-x 16 travis root   4.0K Aug  7 23:05 ..
+-rwxr-xr-x  1 travis root    513 Feb  5  2015 bundle
+-rwxr-xr-x  1 travis root    514 Feb  5  2015 bundler
+-rwxr-xr-x  1 travis travis  510 Aug  7 23:05 dotenv
+-rwxr-xr-x  1 travis travis  498 Aug  7 23:05 fpm
+-rwxr-xr-x  1 travis travis  518 Aug  7 23:05 mustache
+-rwxr-xr-x  1 travis travis  531 Aug  7 23:05 please-manage-user
+-rwxr-xr-x  1 travis travis  522 Aug  7 23:05 pleaserun
+-rwxr-xr-x  1 travis root    502 Feb  5  2015 rake
+-rwxrwxr-x  1 travis root    368 Feb  5  2015 ruby_executable_hooks
+-rwxr-xr-x  1 travis travis  520 Aug  7 23:05 rubygems-cabin-test
+-rwxr-xr-x  1 travis root    546 Feb  5  2015 update_rubygems
+
+Script failed with status 1
+failed to deploy
